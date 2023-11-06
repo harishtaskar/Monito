@@ -33,5 +33,5 @@
 }
 
 .btn-filled {
-  @apply px-[1.5rem] py-[0.6rem]  bg-darkBlue flex items-center gap-2 rounded-full text-sm text-base-100 font-medium mt-3 cursor-pointer;
+  @apply px-[1.5rem] py-[0.6rem]  bg-darkBlue flex items-center gap-2 rounded-full text-sm text-white font-medium mt-3 cursor-pointer;
 }

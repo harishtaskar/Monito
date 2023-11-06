@@ -48,19 +48,19 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52 text-darkBlue"
+            className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52 text-darkBlue"
             style={{ fontFamily: "gilroy, sans-serif" }}
           >
-            <li className="font-semibold text-base">
+            <li className="font-semibold text-white">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="font-semibold text-base">
+            <li className="font-semibold text-white">
               <Link href={"/category"}>Category</Link>
             </li>
-            <li className="font-semibold text-base">
+            <li className="font-semibold text-white">
               <Link href={"/about"}>About</Link>
             </li>
-            <li className="font-semibold text-base">
+            <li className="font-semibold text-white">
               <Link href={"/contact"}>Conatct</Link>
             </li>
           </ul>

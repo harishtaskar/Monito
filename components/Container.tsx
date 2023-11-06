@@ -12,7 +12,7 @@ type Props = {
 
 const Container = ({ id, age, gene, image, name, price }: Props) => {
   return (
-    <div className="flex flex-col justify-start items-start p-2 pb-0 bg-neutral-0 w-fit h-fit rounded-xl gap-[0.25rem] drop-shadow-md z-10 max-w-[11rem] sm:max-w-[18rem] cursor-pointer">
+    <div className="flex flex-col justify-start items-start p-2 pb-0 bg-neutral-0 w-fit h-fit rounded-xl gap-[0.25rem] drop-shadow-md z-10 max-w-[11rem] sm:max-w-[18rem] cursor-pointer mt-2">
       <div id="top">
         <Image
           src={`${image}`}
@@ -37,7 +37,7 @@ const Container = ({ id, age, gene, image, name, price }: Props) => {
             Age: <span className="font-semibold text-neutral-60">{age}</span>
           </p>
         </div>
-        <span className="text-black font-semibold text-sm sm:text-base">
+        <span className="text-black font-semibold text-sm sm:text-white">
           {price}.00 INR
         </span>
       </div>

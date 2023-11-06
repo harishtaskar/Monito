@@ -86,14 +86,14 @@ const SampleData = [
 
 const PetsList = () => {
   return (
-    <section className="bg-base-100 p-4 flex flex-col gap-4 sm:p-[4rem] sm:px-[13.75rem]">
+    <section className="bg-white p-4 flex flex-col gap-4 sm:p-[4rem] sm:px-[12%]">
       <div className="flex flex-col sm:gap-2">
         <p className="font-semibold text-sm ">Whats New</p>
         <span className="font-semibold  text-xl sm:text-[2rem] text-darkBlue">
           Take a look at some of our pets
         </span>
       </div>
-      <ul className="flex gap-1.5 sm:gap-6 flex-wrap items-center justify-start">
+      <ul className="flex sm:gap-[1rem] flex-wrap items-center justify-evenly">
         {SampleData.map((item) => {
           return (
             <li key={item.id}>
