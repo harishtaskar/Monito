@@ -51,16 +51,16 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52 text-darkBlue"
             style={{ fontFamily: "gilroy, sans-serif" }}
           >
-            <li className="font-semibold text-white">
+            <li className="font-semibold text-darkBlue">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="font-semibold text-white">
+            <li className="font-semibold text-darkBlue">
               <Link href={"/category"}>Category</Link>
             </li>
-            <li className="font-semibold text-white">
+            <li className="font-semibold text-darkBlue">
               <Link href={"/about"}>About</Link>
             </li>
-            <li className="font-semibold text-white">
+            <li className="font-semibold text-darkBlue">
               <Link href={"/contact"}>Conatct</Link>
             </li>
           </ul>

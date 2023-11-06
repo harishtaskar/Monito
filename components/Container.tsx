@@ -37,7 +37,7 @@ const Container = ({ id, age, gene, image, name, price }: Props) => {
             Age: <span className="font-semibold text-neutral-60">{age}</span>
           </p>
         </div>
-        <span className="text-black font-semibold text-sm sm:text-white">
+        <span className="text-black font-semibold text-sm sm:text-lg">
           {price}.00 INR
         </span>
       </div>
