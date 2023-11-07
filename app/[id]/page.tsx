@@ -1,5 +1,6 @@
 import PetsList from "@/components/PetsList";
 import ContactButtons from "@/components/shared/ContactButtons";
+import CustomersList from "@/components/shared/CustomersList";
 import FirstBlock from "@/components/shared/FirstBlock";
 import Information from "@/components/shared/Information";
 import React from "react";
@@ -29,6 +30,15 @@ const product = {
   ],
 };
 
+const customers = [
+  "/assets/images/customer4.png",
+  "/assets/images/customer3.png",
+  "/assets/images/customer2.png",
+  "/assets/images/customer5.png",
+  "/assets/images/customer.png",
+  "/assets/images/customer2.png",
+];
+
 type Props = {
   params: {
     id: string;
@@ -56,7 +66,8 @@ const Detail = ({ params: { id } }: Props) => {
           <Information product={product} />
         </div>
       </div>
-      <PetsList />
+      <CustomersList images={customers} />
+      <PetsList heading="" title="See More Pets" />
     </section>
   );
 };

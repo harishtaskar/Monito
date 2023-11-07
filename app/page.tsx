@@ -7,7 +7,10 @@ const Home = () => {
     <>
       <div className="overflow-hidden flex flex-col">
         <Hero />
-        <PetsList />
+        <PetsList
+          title="Take a look at some of our pets"
+          heading="Whats New?"
+        />
       </div>
     </>
   );

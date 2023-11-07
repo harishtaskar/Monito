@@ -33,7 +33,7 @@ const Footer = () => {
               Privacy Policy
             </span>
           </div>
-          <span className="text-sm font-thin text-neutral-60 my-6 sm:my-0">
+          <span className="text-sm font-normal text-neutral-60 my-6 sm:my-0">
             © 2022 Monito. All rights reserved.
           </span>
         </div>
