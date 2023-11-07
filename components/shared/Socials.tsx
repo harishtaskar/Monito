@@ -8,7 +8,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Socials = () => {
   return (
-    <ul className="flex justify-between w-full font-semibold text-black my-6 px-[10%]">
+    <ul className="flex justify-between w-full sm:w-fit font-semibold text-black my-6 sm:px-0 px-[10%] sm:gap-6">
       <Link href={"/"}>
         <FacebookRoundedIcon />
       </Link>

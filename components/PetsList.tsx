@@ -76,7 +76,7 @@ const SampleData = [
   },
   {
     id: "MO235",
-    name: "Siberian Husky",
+    name: "Siberian Husky asdasd",
     gene: "Male",
     age: "8 Months",
     price: 29000,
@@ -93,7 +93,7 @@ const PetsList = () => {
           Take a look at some of our pets
         </span>
       </div>
-      <ul className="flex sm:gap-[1rem] flex-wrap items-center justify-evenly">
+      <ul className="flex sm:gap-[1rem] flex-wrap items-start justify-evenly">
         {SampleData.map((item) => {
           return (
             <li key={item.id}>

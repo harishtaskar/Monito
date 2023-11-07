@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="pt-[5rem] sm:pt-[1.75rem] flex flex-col sm:flex-row p-[1rem] pb-0 gap-8 sm:px-40 sm:items-center">
       <div className="flex flex-col text-darkBlue mt-[1rem] gap-2 flex-auto sm:gap-[1.75rem]">
-        <span className="font-extrabold  text-4xl sm:text-[3rem]">
+        <span className="font-extrabold text-[2rem] sm:text-[3rem]">
           One More Friend
         </span>
         <span className="font-semibold  text-2xl sm:text-[2rem]">

@@ -3,18 +3,18 @@ import Link from "next/link";
 
 const Links = () => {
   return (
-    <ul className="w-full gap-12 flex justify-between font-semibold text-black my-6">
-      <li>
+    <ul className="w-full sm:w-fit gap-8 flex justify-between font-semibold text-black my-6">
+      <li className="hover:text-neutral-60">
         <Link href={"/"}>Home</Link>
       </li>
-      <li>
-        <Link href={"/"}>Category</Link>
+      <li className="hover:text-neutral-60">
+        <Link href={"/category"}>Category</Link>
       </li>
-      <li>
-        <Link href={"/"}>About</Link>
+      <li className="hover:text-neutral-60">
+        <Link href={"/about"}>About</Link>
       </li>
-      <li>
-        <Link href={"/"}>Contact</Link>
+      <li className="hover:text-neutral-60">
+        <Link href={"/contact"}>Contact</Link>
       </li>
     </ul>
   );

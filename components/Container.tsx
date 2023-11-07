@@ -19,7 +19,7 @@ const Container = ({ id, age, gene, image, name, price }: Props) => {
           width={300}
           height={300}
           alt="image"
-          className="sm:w-[16rem] sm:h-[16rem] h-[10rem] w-[10rem] rounded-lg"
+          className="w-full rounded-lg"
         />
       </div>
       <div
