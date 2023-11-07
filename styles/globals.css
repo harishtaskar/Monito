@@ -33,9 +33,9 @@ input {
 }
 
 .btn-outline {
-  @apply px-[1.5rem] py-[0.6rem] border border-darkBlue flex items-center gap-2 rounded-full text-sm text-darkBlue font-medium mt-3 cursor-pointer hover:bg-darkBlue whitespace-nowrap;
+  @apply px-[1.5rem] py-[0.6rem] border border-darkBlue flex items-center gap-2 rounded-full text-sm  text-darkBlue font-medium cursor-pointer hover:bg-darkBlue whitespace-nowrap active:bg-transparent focus:bg-transparent;
 }
 
 .btn-filled {
-  @apply px-[1.5rem] py-[0.6rem]  bg-darkBlue flex items-center gap-2 rounded-full text-sm text-white font-medium mt-3 cursor-pointer whitespace-nowrap;
+  @apply px-[1.5rem] py-[0.6rem]  bg-darkBlue flex items-center gap-2 rounded-full text-sm text-white font-medium cursor-pointer whitespace-nowrap;
 }

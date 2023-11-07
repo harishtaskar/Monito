@@ -18,10 +18,10 @@ const Hero = () => {
           can meet your needs!
         </p>
         <div className="flex gap-3">
-          <button className="btn-outline">
+          <button className="btn-outline mt-3">
             View Intro <PlayCircleOutlineRoundedIcon fontSize="small" />
           </button>
-          <button className="btn-filled">Explore Now</button>
+          <button className="btn-filled mt-3">Explore Now</button>
         </div>
       </div>
       <div className="sm:mt-2">

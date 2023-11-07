@@ -8,7 +8,6 @@ const Home = () => {
       <div className="overflow-hidden flex flex-col">
         <Hero />
         <PetsList />
-        
       </div>
     </>
   );
