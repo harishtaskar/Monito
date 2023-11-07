@@ -7,7 +7,7 @@ const RegisterForm = () => {
       className="flex flex-col gap-4 p-4 rounded-xl w-fit bg-darkBlue mt-6"
     >
       <span className="text-white text-xl font-medium">
-        Register now so you don't miss our programs
+        Register now so you don&lsquo;t miss our programs
       </span>
       <div className="flex flex-col p-4 w-full bg-white rounded-lg">
         <input
