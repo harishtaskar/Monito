@@ -4,31 +4,7 @@ import CustomersList from "@/components/shared/CustomersList";
 import FirstBlock from "@/components/shared/FirstBlock";
 import Information from "@/components/shared/Information";
 import React from "react";
-
-const product = {
-  title: "Pomeranian White",
-  id: "MO231",
-  sku: "1000078",
-  colors: ["Appriot", "Tan"],
-  size: "small",
-  vaccinated: true,
-  microchip: true,
-  location: "India",
-  additionInfo:
-    "Pure breed Shih Tzu.Good body structure.With MKA cert and microchip. Father from champion lineage",
-  name: "Pomeranian White",
-  gene: "Male",
-  age: "2 Months",
-  price: 19000,
-  images: [
-    "/assets/images/dog1.png",
-    "/assets/images/dog2.png",
-    "/assets/images/dog3.png",
-    "/assets/images/dog4.png",
-    "/assets/images/dog5.png",
-    "/assets/images/dog6.png",
-  ],
-};
+import productList from "@/Dummy/product.json";
 
 const customers = [
   "/assets/images/customer4.png",
@@ -46,6 +22,12 @@ type Props = {
 };
 
 const Detail = ({ params: { id } }: Props) => {
+  const findProduct = productList.filter((item) => {
+    return item.id === id;
+  });
+
+  const product: Dog = findProduct[0];
+
   return (
     <section className="bg-white pt-[4rem] sm:pt-[1.75rem] flex flex-col sm:flex-col pb-0 gap-8 sm:items-center">
       <div className="grid sm:flex sm:mt-[4rem] sm:gap-4 sm:px-[20%]">
@@ -59,7 +41,7 @@ const Detail = ({ params: { id } }: Props) => {
           <span className="text-darkBlue text-base font-semibold">
             {product.price}.00 INR
           </span>
-          <ContactButtons id={product.id}/>
+          <ContactButtons id={product.id} />
           <span className="text-neutral-60 text-sm font-semibold">
             Information
           </span>

@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Pomeranian White",
+    "id": "MO231",
+    "sku": "1000078",
+    "colors": ["Appriot", "Tan"],
+    "size": "small",
+    "vaccinated": true,
+    "microchip": true,
+    "location": "India",
+    "additionInfo": "Pure breed Shih Tzu. Good body structure. With MKA cert and microchip. Father from champion lineage.",
+    "name": "Pomeranian White",
+    "gene": "Male",
+    "age": "2 Months",
+    "price": 19000,
+    "images": [
+      "/assets/images/dog1.png",
+      "/assets/images/dog2.png",
+      "/assets/images/dog3.png",
+      "/assets/images/dog4.png",
+      "/assets/images/dog5.png",
+      "/assets/images/dog6.png"
+    ]
+  },
+  {
+    "title": "Pomeranian Gray",
+    "id": "MO232",
+    "sku": "1000079",
+    "colors": ["Appriot", "Tan"],
+    "size": "small",
+    "vaccinated": true,
+    "microchip": true,
+    "location": "India",
+    "additionInfo": "Pure breed Shih Tzu. Good body structure. With MKA cert and microchip. Father from champion lineage.",
+    "name": "Pomeranian White",
+    "gene": "Male",
+    "age": "4 Months",
+    "price": 18500,
+    "images": [
+      "/assets/images/dog2.png",
+      "/assets/images/dog6.png",
+      "/assets/images/dog3.png",
+      "/assets/images/dog4.png",
+      "/assets/images/dog5.png",
+      "/assets/images/dog1.png"
+    ]
+  }
+]

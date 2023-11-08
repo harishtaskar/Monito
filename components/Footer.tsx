@@ -10,7 +10,7 @@ const Footer = () => {
       id="footer"
       className="flex flex-col gap-4 items-center bg-lightYellow p-4 sm:gap-8 rounded-t-lg w-full sm:px-[15%]"
     >
-      <div className="sm:px-[2%]">
+      <div className="px-[5%]">
         <RegisterForm />
       </div>
       <div className="flex flex-col justify-center items-center sm:w-full">
