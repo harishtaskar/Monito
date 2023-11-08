@@ -33,7 +33,7 @@ input {
 }
 
 .btn-outline {
-  @apply px-[1.5rem] py-[0.6rem] border border-darkBlue flex items-center gap-2 rounded-full text-sm  text-darkBlue font-medium cursor-pointer hover:bg-darkBlue whitespace-nowrap active:bg-transparent focus:bg-transparent;
+  @apply px-[1.5rem] py-[0.6rem] border border-darkBlue flex items-center justify-center gap-2 rounded-full text-sm  text-darkBlue cursor-pointer hover:bg-darkBlue whitespace-nowrap active:bg-transparent focus:bg-transparent;
 }
 
 .btn-filled {

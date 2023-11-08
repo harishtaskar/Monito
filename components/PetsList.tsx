@@ -35,6 +35,9 @@ const PetsList = ({ title, heading }: Props) => {
           );
         })}
       </ul>
+      <button className="btn-outline font-semibold m-2 hover:bg-transparent hover:text-darkBlue sm:w-fit">
+        View More
+      </button>
     </section>
   );
 };

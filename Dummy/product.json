@@ -32,7 +32,7 @@
     "microchip": true,
     "location": "India",
     "additionInfo": "Pure breed Shih Tzu. Good body structure. With MKA cert and microchip. Father from champion lineage.",
-    "name": "Pomeranian White",
+    "name": "Pomeranian Gray",
     "gene": "Male",
     "age": "4 Months",
     "price": 18500,
@@ -41,6 +41,52 @@
       "/assets/images/dog6.png",
       "/assets/images/dog3.png",
       "/assets/images/dog4.png",
+      "/assets/images/dog5.png",
+      "/assets/images/dog1.png"
+    ]
+  },
+  {
+    "title": "Poodle Tiny Yellow",
+    "id": "MO234",
+    "sku": "1000080",
+    "colors": ["Appriot", "Tan"],
+    "size": "small",
+    "vaccinated": true,
+    "microchip": true,
+    "location": "India",
+    "additionInfo": "Pure breed Shih Tzu. Good body structure. With MKA cert and microchip. Father from champion lineage.",
+    "name": "Poodle Tiny Yellow",
+    "gene": "Male",
+    "age": "3.5 Months",
+    "price": 11500,
+    "images": [
+      "/assets/images/dog3.png",
+      "/assets/images/dog2.png",
+      "/assets/images/dog6.png",
+      "/assets/images/dog4.png",
+      "/assets/images/dog5.png",
+      "/assets/images/dog1.png"
+    ]
+  },
+  {
+    "title": "Alaskan Malamute Grey",
+    "id": "MO232",
+    "sku": "1000079",
+    "colors": ["Appriot", "Tan"],
+    "size": "small",
+    "vaccinated": true,
+    "microchip": true,
+    "location": "India",
+    "additionInfo": "Pure breed Shih Tzu. Good body structure. With MKA cert and microchip. Father from champion lineage.",
+    "name": "Alaskan Malamute Grey",
+    "gene": "Male",
+    "age": "8 Months",
+    "price": 13500,
+    "images": [
+      "/assets/images/dog4.png",
+      "/assets/images/dog2.png",
+      "/assets/images/dog6.png",
+      "/assets/images/dog3.png",
       "/assets/images/dog5.png",
       "/assets/images/dog1.png"
     ]
