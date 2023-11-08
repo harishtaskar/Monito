@@ -2,11 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { useRecoilValue } from "recoil";
+import { favoriteState } from "@/store";
 
 const NavBar = () => {
   const [searchIsVisisble, setSearchIsVisisble] = useState<boolean>(false);
   const [searchInput, setSearchInput] = useState<string>("");
+  const favoriteList = useRecoilValue(favoriteState);
 
   const onSerchChangeListner = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
@@ -85,8 +88,8 @@ const NavBar = () => {
           <div>
             <input
               type="text"
-              className="px-4 py-2 rounded-full border border-neutral-20 text-sm"
-              placeholder="search..."
+              className="px-4 py-2 rounded-full border border-neutral-20 text-sm sm:w-96"
+              placeholder="search"
               onChange={onSerchChangeListner}
             />
           </div>
@@ -110,14 +113,18 @@ const NavBar = () => {
             />
           </svg>
         </button>
-        <button className="btn btn-ghost btn-circle">
-          <div className="indicator">
-            <ShoppingCartOutlinedIcon fontSize="small" />
-            <span className="badge badge-xs badge-primary indicator-item text-xm p-0.5">
-              {1}
-            </span>
-          </div>
-        </button>
+        <Link href={"/favorites"}>
+          <button className="btn btn-ghost btn-circle">
+            <div className="indicator">
+              <FavoriteBorderOutlinedIcon />
+              {favoriteList.length > 0 && (
+                <span className="badge badge-xs badge-primary indicator-item text-xm p-0.5">
+                  {favoriteList.length}
+                </span>
+              )}
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   );

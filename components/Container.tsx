@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import IsFavorite from "./shared/IsFavorite";
 
 type Props = {
   id: string;
@@ -15,7 +16,7 @@ const Container = ({ id, age, gene, images, name, price }: Props) => {
 
   return (
     <div className="flex flex-col justify-start items-start p-2 pb-0 bg-white w-fit h-fit rounded-xl gap-[0.25rem] drop-shadow-sm sm:drop-shadow-md z-10 max-w-[11rem] sm:max-w-[16rem] cursor-pointer mt-2">
-      <div id="top">
+      <div id="top" className="relative">
         <Image
           src={`${images[0]}`}
           width={300}
@@ -23,6 +24,9 @@ const Container = ({ id, age, gene, images, name, price }: Props) => {
           alt="image"
           className="w-full h-36 sm:h-52 rounded-lg"
         />
+        <div className="fixed top-[8%] left-[80%] sm:top-[5%] sm:left-[85%] z-30 drop-shadow-lg ">
+          <IsFavorite id={id} />
+        </div>
       </div>
       <div
         id="bottom"

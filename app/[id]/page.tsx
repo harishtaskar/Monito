@@ -59,7 +59,7 @@ const Detail = ({ params: { id } }: Props) => {
           <span className="text-darkBlue text-base font-semibold">
             {product.price}.00 INR
           </span>
-          <ContactButtons />
+          <ContactButtons id={product.id}/>
           <span className="text-neutral-60 text-sm font-semibold">
             Information
           </span>
