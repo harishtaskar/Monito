@@ -31,6 +31,7 @@ const config: Config = {
       darkBlue: "#003459",
       monYellow: "#F7DBA7",
       lightYellow: "#FCEED5",
+      whiteSmoke: "#F7F7F7",
     },
   },
 

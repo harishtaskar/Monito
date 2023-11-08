@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="pt-[5rem] sm:pt-[1.75rem] flex flex-col sm:flex-row p-[1rem] pb-0 gap-8 sm:px-40 sm:items-center">
-      <div className="flex flex-col text-darkBlue mt-[1rem] gap-2 flex-auto sm:gap-[1.75rem]">
-        <span className="font-extrabold text-[2rem] sm:text-[3rem]">
+    <section className="pt-[5rem] sm:pt-[1.75rem] flex flex-col sm:flex-row p-[1rem] pb-0 sm:px-40 min-h-[70%] sm:items-center justify-between gap-4">
+      <div className="flex flex-col text-darkBlue mt-[1rem] gap-1 flex-auto sm:gap-2">
+        <span className="font-extrabold text-4xl sm:text-6xl">
           One More Friend
         </span>
-        <span className="font-semibold  text-2xl sm:text-[2rem]">
+        <span className="font-bold text-[1.5rem] sm:text-[3rem]">
           Thousands More Fun!
         </span>
         <p className="text-[0.75rem] sm:text-sm font-light text-black tracking-wide sm:font-normal">
@@ -30,7 +30,7 @@ const Hero = () => {
           width={1500}
           height={1500}
           alt="heroImage"
-          className="w-full h-full"
+          className="min-w-full min-h-full sm:min-h-[25rem] sm:min-w-[35rem] block max-w-[100%]"
         />
       </div>
     </section>

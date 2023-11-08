@@ -10,14 +10,14 @@ type Props = {
 
 const PetsList = ({ title, heading }: Props) => {
   return (
-    <section className="w-full bg-neutral-0 p-4 flex flex-col gap-2 sm:p-[2rem] px-[3%] sm:px-[12%]">
+    <section className="w-full bg-whiteSmoke p-4 flex flex-col gap-2 sm:p-[2rem] px-[3%] sm:px-[12%]">
       <div className="flex flex-col sm:gap-2">
         <p className="font-semibold text-sm ">{heading}</p>
         <span className="font-semibold  text-xl sm:text-[2rem] text-darkBlue">
           {title}
         </span>
       </div>
-      <ul className="flex sm:gap-[1rem] flex-wrap items-start justify-evenly">
+      <ul className="flex sm:gap-[1rem] gap-2 flex-wrap items-start justify-start">
         {Product.map((item) => {
           return (
             <li key={item.id}>

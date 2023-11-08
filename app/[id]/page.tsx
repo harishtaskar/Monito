@@ -5,6 +5,7 @@ import FirstBlock from "@/components/shared/FirstBlock";
 import Information from "@/components/shared/Information";
 import React from "react";
 import productList from "@/Dummy/product.json";
+import { notFound } from "next/navigation";
 
 const customers = [
   "/assets/images/customer4.png",
@@ -26,10 +27,14 @@ const Detail = ({ params: { id } }: Props) => {
     return item.id === id;
   });
 
+  if (findProduct.length === 0) {
+    notFound();
+  }
+
   const product: Dog = findProduct[0];
 
   return (
-    <section className="bg-white pt-[4rem] sm:pt-[1.75rem] flex flex-col sm:flex-col pb-0 gap-8 sm:items-center">
+    <section className="bg-whiteSmoke pt-[4rem] sm:pt-[1.75rem] flex flex-col sm:flex-col pb-0 gap-8 sm:items-center">
       <div className="grid sm:flex sm:mt-[4rem] sm:gap-4 sm:px-[20%]">
         <div className="sm:flex-1">
           <FirstBlock images={product.images} />

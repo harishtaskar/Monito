@@ -22,7 +22,7 @@ const Container = ({ id, age, gene, images, name, price }: Props) => {
           width={300}
           height={300}
           alt="image"
-          className="w-full h-36 sm:h-52 rounded-lg"
+          className="w-full h-40 sm:h-52 block rounded-lg"
         />
         <div className="fixed top-[8%] left-[80%] sm:top-[5%] sm:left-[85%] z-30 drop-shadow-lg ">
           <IsFavorite id={id} />
@@ -35,7 +35,7 @@ const Container = ({ id, age, gene, images, name, price }: Props) => {
         <span className="text-black font-semibold sm:text-lg text-[0.75rem]">
           {id}-{limitedName}
         </span>
-        <div className="flex gap-1 items-center">
+        <div className="flex flex-col sm:flex-row gap-1 items-start">
           <p className="text-neutral-80 text-xs sm:text-sm">
             Gene: <span className=" text-neutral-60">{gene}</span>
           </p>
