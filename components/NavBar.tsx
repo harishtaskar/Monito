@@ -7,8 +7,10 @@ import { useRecoilValue } from "recoil";
 import { favoriteState } from "@/store";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { signIn, useSession } from "next-auth/react";
 
 const NavBar = () => {
+  const { data: session } = useSession();
   const [searchIsVisisble, setSearchIsVisisble] = useState<boolean>(false);
   const [searchInput, setSearchInput] = useState<string>("");
   const favoriteList = useRecoilValue(favoriteState);
@@ -72,7 +74,7 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <div className="navbar-end sm:gap-3 gap-1">
+      <div className="navbar-end sm:gap-3 ">
         {searchIsVisisble && (
           <div>
             <input
@@ -101,6 +103,16 @@ const NavBar = () => {
             </div>
           </button>
         </Link>
+        {!session && (
+          <button
+            className="btn-outline font-semibold m-2 text-black sm:w-fit"
+            onClick={() => {
+              signIn();
+            }}
+          >
+            Login
+          </button>
+        )}
       </div>
     </div>
   );
