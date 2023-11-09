@@ -4,12 +4,12 @@ const RegisterForm = () => {
   return (
     <form
       action="submit"
-      className="flex sm:flex-row flex-col gap-4 p-4 rounded-3xl w-full bg-darkBlue mt-6 sm:p-6 sm:px-8 sm:rounded-2xl"
+      className="flex sm:flex-row flex-col gap-4 sm:gap-8 p-4 rounded-3xl w-full bg-darkBlue mt-6 sm:p-8 sm:rounded-3xl"
     >
-      <span className="text-white text-xl sm:text-2xl font-medium sm:font-medium">
+      <span className="text-white text-xl sm:text-2xl font-medium sm:font-medium ">
         Register now so you don&lsquo;t miss our programs
       </span>
-      <div className="flex sm:flex-row sm:gap-4 flex-col p-4 w-full bg-white rounded-2xl">
+      <div className="flex sm:flex-row sm:gap-4 flex-col p-4 w-full bg-white rounded-2xl ">
         <input
           type="email"
           id="email"

@@ -8,11 +8,10 @@ const Footer = () => {
   return (
     <section
       id="footer"
-      className="flex flex-col gap-4 items-center bg-lightYellow p-4 sm:gap-8 rounded-t-lg w-full sm:px-[15%]"
+      className="flex flex-col gap-4 items-center bg-lightYellow p-4 sm:gap-8 rounded-t-lg w-full sm:px-[12%]"
     >
-      <div className="px-[5%]">
-        <RegisterForm />
-      </div>
+      <RegisterForm />
+
       <div className="flex flex-col justify-center items-center sm:w-full">
         <div className="sm:flex sm:flex-row sm:justify-between sm:w-full sm:items-center">
           <Links />

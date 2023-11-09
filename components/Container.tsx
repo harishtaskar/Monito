@@ -15,7 +15,7 @@ const Container = ({ id, age, gene, images, name, price }: Props) => {
   const limitedName = name.substring(0, 15) + "..";
 
   return (
-    <div className="flex flex-col justify-start items-start p-2 bg-white w-fit h-fit rounded-xl gap-[0.25rem] drop-shadow-sm sm:drop-shadow-md z-10 max-w-[11rem] sm:max-w-[16rem] cursor-pointer mt-2">
+    <div className="flex flex-col justify-start items-start p-2 bg-white w-fit h-fit rounded-xl gap-[0.25rem] drop-shadow-sm sm:drop-shadow-md z-10 max-w-[11rem] sm:max-w-[16rem] cursor-pointer sm:mt-0">
       <div id="top" className="relative">
         <Image
           src={`${images[0]}`}
@@ -30,7 +30,7 @@ const Container = ({ id, age, gene, images, name, price }: Props) => {
       </div>
       <div
         id="bottom"
-        className="flex flex-col m-[0.25rem] sm:m-[0.5rem] mb-[0.5rem] sm:mb-[1rem] gap-0.5"
+        className="flex flex-col m-[0.25rem]   mb-[0.5rem] gap-0.5"
       >
         <span className="text-black font-semibold sm:text-lg text-[0.75rem]">
           {id}-{limitedName}
